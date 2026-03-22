@@ -9,7 +9,8 @@
 <body>
   <nav class="nav">
     <a class="nav-logo" href="../index.html">Butterfly<span> Escape</span> 🦋</a>
-    <ul class="nav-links">
+    <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    <ul class="nav-links" id="nav-links">
       <li><a href="../index.html#posts">Articles</a></li>
       <li><a href="../index.html#about">About</a></li>
       <li><a href="https://www.instagram.com/butterfly__escape" target="_blank" rel="noopener" class="nav-cta">Instagram ↗</a></li>
@@ -76,5 +77,28 @@
   <footer class="footer">
     <p>© 2025 Butterfly Escape · <a href="../index.html">← All Articles</a> · <a href="https://www.instagram.com/butterfly__escape" target="_blank">Instagram</a></p>
   </footer>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const links = document.querySelectorAll('.nav-links a');
+    
+    if (hamburger && navLinks) {
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('active');
+        navLinks.classList.toggle('active');
+      });
+      
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburger.classList.remove('active');
+          navLinks.classList.remove('active');
+        });
+      });
+    }
+  });
+</script>
 </body>
+
 </html>
