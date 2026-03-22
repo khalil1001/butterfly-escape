@@ -415,8 +415,8 @@ a { text-decoration: none; color: inherit; }
 
 /* ── About Strip ─────────────────────────────────────────── */
 .about-strip {
-  background: var(--white);
-  color: var(--charcoal);
+  background: var(--charcoal);
+  color: var(--white);
   padding: 6rem 2rem;
   text-align: center;
 }
@@ -444,7 +444,7 @@ a { text-decoration: none; color: inherit; }
 .about-quote {
   font-size: 1.4rem; 
   font-family: var(--font-serif); 
-  color: var(--charcoal); 
+  color: var(--white); 
   margin: 0 auto 1rem; 
   line-height: 1.4; 
   max-width: 600px;
@@ -461,7 +461,7 @@ a { text-decoration: none; color: inherit; }
 .about-content {
   font-size: 1.05rem; 
   line-height: 1.8; 
-  color: var(--charcoal); 
+  color: var(--taupe); 
   max-width: 650px; 
   margin: 0 auto; 
   text-align: center;
