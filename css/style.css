@@ -464,7 +464,7 @@ a { text-decoration: none; color: inherit; }
   color: var(--charcoal); 
   max-width: 650px; 
   margin: 0 auto; 
-  text-align: left;
+  text-align: center;
 }
 
 .about-content p {
