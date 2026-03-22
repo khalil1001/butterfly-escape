@@ -656,8 +656,10 @@ a { text-decoration: none; color: inherit; }
 /* ── Responsive ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   .nav { padding: 0 1rem; }
-  .nav-links { gap: 1rem; }
-  .nav-links li:not(:last-child) { display: none; }
+  .nav-logo { font-size: 1.1rem; }
+  .nav-links { gap: 0.8rem; }
+  .nav-links a { font-size: 0.75rem; }
+  .nav-links .nav-cta { padding: 0.35rem 0.7rem; }
 
   .posts-grid { 
     grid-template-columns: 1fr; 
