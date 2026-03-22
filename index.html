@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Butterfly Escape 🦋 — My Travel Journey</title>
+  <meta name="description" content="A travel blog exploring the world's most beautiful destinations — from the cobblestones of Paris to the fjords of Bergen, the souks of Marrakech to the hills of San Francisco." />
+  <meta property="og:title" content="Butterfly Escape — My Travel Journey" />
+  <meta property="og:description" content="A travel blog sharing stories, photos and tips from cities and escapes around the world." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══════════════════════════════════════ -->
+  <nav class="nav">
+    <a class="nav-logo" href="index.html">Butterfly<span> Escape</span> 🦋</a>
+    <ul class="nav-links">
+      <li><a href="#posts">Articles</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="https://www.instagram.com/butterfly__escape" target="_blank" rel="noopener" class="nav-cta">Instagram ↗</a></li>
+    </ul>
+  </nav>
+
+  <!-- ═══ HERO ══════════════════════════════════════════════ -->
+  <header class="hero">
+    <span class="hero-butterfly">🦋</span>
+    <p class="hero-eyebrow">My Travel Journey</p>
+    <h1 class="hero-title">Butterfly <em>Escape</em></h1>
+    <p class="hero-sub">Stories, wanderings and discoveries from cities and escapes around the world — one adventure at a time.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>38</strong><span>Articles</span></div>
+      <div class="hero-stat"><strong>20+</strong><span>Countries</span></div>
+      <div class="hero-stat"><strong>5</strong><span>Years</span></div>
+    </div>
+  </header>
+
+  <!-- ═══ POSTS SECTION ════════════════════════════════════ -->
+  <section id="posts">
+    <div class="section-header">
+      <p class="section-eyebrow">Explore</p>
+      <h2 class="section-title">All Destinations</h2>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar" id="filterBar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="europe">Europe</button>
+      <button class="filter-btn" data-filter="america">Americas</button>
+      <button class="filter-btn" data-filter="africa">Africa & Middle East</button>
+      <button class="filter-btn" data-filter="france">France</button>
+    </div>
+
+    <!-- ═══ POST CARDS GRID ═══════════════════════════════ -->
+    <div class="posts-grid" id="postsGrid">
+
+      <!-- ─── 1. Into Hygge ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/into-hygge.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2025/07/img_4952.jpg?fit=900%2C1200&ssl=1" alt="Into Hygge — Copenhagen" loading="lazy" />
+          <span class="card-tag">🇩🇰 Denmark</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">May 6, 2025</p>
+          <h2 class="card-title">Into Hygge, the Danish Pursuit of Happiness</h2>
+          <p class="card-excerpt">Copenhagen is now the world's most liveable city. I explore the concept of Hygge and why the Danes are consistently the world's happiest people.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 2. København Diaries ───────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/kobenhavn-diaries.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2025/07/img_5241.jpg?fit=1200%2C900&ssl=1" alt="København Diaries" loading="lazy" onerror="this.style.display='none';this.parentElement.style.background='var(--taupe)'" />
+          <span class="card-tag">🇩🇰 Denmark</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">May 5, 2025</p>
+          <h2 class="card-title">København Diaries</h2>
+          <p class="card-excerpt">Copenhague m'a toujours fait de l'œil. Cette fois-ci, entre copines, on a décidé de vivre la hype de cette ville nordique — Nyhavn, Strøget, design danois et Hygge.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 3. Strolling Paris Spring ─────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/strolling-paris-spring.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2025/07/img_4275-3.jpg?fit=1200%2C900&ssl=1" alt="Paris in spring" loading="lazy" />
+          <span class="card-tag">🇫🇷 Paris</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">May 1, 2025</p>
+          <h2 class="card-title">Strolling Paris Cobblestones by Spring Times</h2>
+          <p class="card-excerpt">A curated walking itinerary through Quartier Latin and Le Marais — from Quai Henri IV to Place des Vosges, Île Saint-Louis and beyond.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 4. Vivre NYC à la Friends ─────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="america" onclick="location.href='posts/vivre-nyc.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2025/03/img_9170.jpg?fit=1200%2C806&ssl=1" alt="New York City" loading="lazy" />
+          <span class="card-tag">🗽 New York</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">March 11, 2025</p>
+          <h2 class="card-title">Vivre NYC à la Friends</h2>
+          <p class="card-excerpt">Je n'ai jamais été très fan des clichés des grandes villes… mais NYC, c'est différent. Brooklyn Bridge, The Village, le spot de FRIENDS, Central Park.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 5. Food-Lover ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="france" onclick="location.href='posts/food-lover.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/12/dsc_4659-01_original-1.jpg?fit=1200%2C757&ssl=1" alt="Food lover travels" loading="lazy" />
+          <span class="card-tag">🍽️ Food</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">December 12, 2024</p>
+          <h2 class="card-title">Rituels d'une food-lover en vadrouille</h2>
+          <p class="card-excerpt">Macarons, cannoli, cinnamon rolls, tiramisu, miso soup… Un carnet de route culinaire autour du monde à travers les papilles.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 6. SF Hills & Hoods ────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="america" onclick="location.href='posts/sf-hills-hoods.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/09/img_5899-1.jpg?fit=896%2C1200&ssl=1" alt="San Francisco hills" loading="lazy" />
+          <span class="card-tag">🌉 San Francisco</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">September 22, 2024</p>
+          <h2 class="card-title">Strolling San Francisco Hills &amp; Hoods</h2>
+          <p class="card-excerpt">Downtown, North Beach, Chinatown, Japantown, Mission Dolores, Haight-Ashbury, Marina — a neighborhood-by-neighborhood guide to SF's cultural diversity.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 7. Exploring SF ────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="america" onclick="location.href='posts/exploring-sf.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/09/img_5508-1.jpg?fit=1200%2C900&ssl=1" alt="San Francisco bay" loading="lazy" />
+          <span class="card-tag">🌉 San Francisco</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">September 18, 2024</p>
+          <h2 class="card-title">Exploring the City by the Bay</h2>
+          <p class="card-excerpt">SF's incredible history — from the Gold Rush and 1906 earthquake to the Summer of Love, dot-com boom and the AI revolution. Why the city by the bay is truly unique.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 8. Normandie ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/normandie.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/11/img_3983-1.jpg?fit=900%2C1200&ssl=1" alt="Normandie coast" loading="lazy" />
+          <span class="card-tag">🇫🇷 Normandie</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">August 31, 2024</p>
+          <h2 class="card-title">Papillonner en Normandie</h2>
+          <p class="card-excerpt">Giverny, Rouen, Deauville, Honfleur, Étretat, Veules-les-Roses… Une ode à la Normandie impressionniste et ses falaises spectaculaires.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 9. Vie nomade ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/vie-nomade.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/08/img_3166-1-1.jpg?fit=1200%2C984&ssl=1" alt="Nomad van life" loading="lazy" />
+          <span class="card-tag">🚐 Van Life</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">August 4, 2024</p>
+          <h2 class="card-title">Goûter à la vie nomade</h2>
+          <p class="card-excerpt">Hippies, Combi VW, Flower Power… J'ai testé le van life cet été. Minimalisme, nature, liberté et l'art de l'essentiel — une expérience à part entière.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 10. London Summer ──────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/london-summer.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/07/img_1625-1.jpg?fit=1200%2C900&ssl=1" alt="London summer" loading="lazy" />
+          <span class="card-tag">🇬🇧 London</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">July 7, 2024</p>
+          <h2 class="card-title">London Calling (Summer Edition)</h2>
+          <p class="card-excerpt">Notting Hill, Chelsea, Greenwich Park, British Museum… Londres a une âme plus légère et joyeuse pendant les beaux jours. It's the place to be!</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 11. Crète ─────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/crete.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2025/11/img_0828.jpg?fit=1200%2C900&ssl=1" alt="Crete Greece" loading="lazy" />
+          <span class="card-tag">🇬🇷 Crete</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">June 29, 2024</p>
+          <h2 class="card-title">De Heraklion à la Canée : mon escapade crétoise</h2>
+          <p class="card-excerpt">Heraklion, Chania (mon coup de cœur !), Rethymnon… La Crète entre plages de galets, tavernas au bord de l'eau et farniente méditerranéenne.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 12. Paris x NY Architecture ──────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe america france" onclick="location.href='posts/paris-ny-architecture.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/04/img_7969-2.jpg?fit=1033%2C1200&ssl=1" alt="Art Nouveau Paris" loading="lazy" />
+          <span class="card-tag">🎨 Art &amp; Architecture</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">March 29, 2024</p>
+          <h2 class="card-title">From Paris to New York, Look Up!</h2>
+          <p class="card-excerpt">Art Nouveau, Art Deco — a guide to the most beautiful architectural gems across Paris, New York and Budapest, from metro entrances to Art Deco skyscrapers.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 13. Tulum ─────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="america" onclick="location.href='posts/tulum.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/01/img_5704.jpg?fit=1200%2C900&ssl=1" alt="Tulum Mexico" loading="lazy" />
+          <span class="card-tag">🇲🇽 Tulum</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">January 20, 2024</p>
+          <h2 class="card-title">¡ Hola TULUM !</h2>
+          <p class="card-excerpt">Une journée normale à Tulum: açaí bowl au lever du soleil, yoga dans la jungle, Coco Frio sur la playa, rooftop au coucher de soleil et fiesta la noche.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 14. Cancún ────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="america" onclick="location.href='posts/cancun.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2024/03/img_4810-1.jpg?fit=1200%2C858&ssl=1" alt="Cancun Mexico" loading="lazy" />
+          <span class="card-tag">🇲🇽 Cancún</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">January 12, 2024</p>
+          <h2 class="card-title">Postcard from Cancún</h2>
+          <p class="card-excerpt">Pélicans sur la plage, iguanes au bord du lagon, une journée folle au Mercado avec des amis mexicains et des empanadas inoubliables.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 15. Tunisia ───────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="africa" onclick="location.href='posts/tunisia.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2023/08/dsc_2244_original.jpg?fit=1200%2C735&ssl=1" alt="Tunisia" loading="lazy" />
+          <span class="card-tag">🇹🇳 Tunisia</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">August 2, 2023</p>
+          <h2 class="card-title">Souls of Tunisia</h2>
+          <p class="card-excerpt">A travel guide for every type of traveller — sea lovers, foodies, coffee lovers, sunset chasers and architecture enthusiasts. Small country, big civilization.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 16. Florence ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/florence.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2023/03/img_3196-1.jpg?fit=1200%2C900&ssl=1" alt="Florence Italy" loading="lazy" />
+          <span class="card-tag">🇮🇹 Florence</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">March 27, 2023</p>
+          <h2 class="card-title">Sweet Escape to Florence</h2>
+          <p class="card-excerpt">Ponte Vecchio, Uffizi Gallery, Bardini Gardens, espresso at the bar, Ribollita soup and Tiramisu. Florence is an open-sky Renaissance museum.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 17. Dubai ─────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="africa" onclick="location.href='posts/dubai.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2023/03/img_1840.jpg?fit=1200%2C900&ssl=1" alt="Dubai skyline" loading="lazy" />
+          <span class="card-tag">🇦🇪 Dubai</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">February 27, 2023</p>
+          <h2 class="card-title">Escapade Dubaïote</h2>
+          <p class="card-excerpt">Downtown, Vieux Dubai, Souk d'Or, Safari au désert… Dubaï est une ville presque futuriste: ultra-moderne, hyper-propre, et 85% d'expatriés.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 18. London Winter ─────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/london-winter.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2023/01/dsc_0707_original-1.jpg?fit=1200%2C1150&ssl=1" alt="London winter" loading="lazy" />
+          <span class="card-tag">🇬🇧 London</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">January 6, 2023</p>
+          <h2 class="card-title">Escapade British à Londres</h2>
+          <p class="card-excerpt">Hyde Park, Covent Garden, Camden Town et son hommage à Amy Winehouse, West End Theater Life et Tea-Time au fond d'un pub.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 19. Paris Autumn ───────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/paris-autumn.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/10/20211009_183850_original.jpg?fit=1200%2C540&ssl=1" alt="Paris autumn" loading="lazy" />
+          <span class="card-tag">🇫🇷 Paris</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">October 11, 2022</p>
+          <h2 class="card-title">Amber Season in Paris</h2>
+          <p class="card-excerpt">Montmartre, Paris 14e, les lumières de la Tour Eiffel… An Instagram gallery of Paris dressed in its most beautiful autumn colors.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 20. Corfu ─────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/corfu.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/09/dsc_0590_original.jpg?fit=1200%2C801&ssl=1" alt="Corfu Greece" loading="lazy" />
+          <span class="card-tag">🇬🇷 Corfu</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">September 18, 2022</p>
+          <h2 class="card-title">Corfu, the Emerald Island</h2>
+          <p class="card-excerpt">Kerkyra old town, crystal-clear Ionian waters, Greek tavernas and the Channel of Love. A comprehensive guide with road trip itinerary and food spots.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 21. Sardegna ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/sardegna.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/09/dsc_0849_original-1.jpg?fit=1200%2C801&ssl=1" alt="Sardegna Italy" loading="lazy" />
+          <span class="card-tag">🇮🇹 Sardegna</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">August 31, 2022</p>
+          <h2 class="card-title">Un Été à Sardegna</h2>
+          <p class="card-excerpt">Alghero, Castelsardo, Isola Rossa — une escapade estivale sur la côte nord-ouest de la Sardaigne entre lever de soleil et farniente sur les plages turquoise.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 22. Amalfi Coast ───────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/amalfi.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/07/dsc_0867_original-1.jpg?fit=1200%2C800&ssl=1" alt="Amalfi Coast Italy" loading="lazy" />
+          <span class="card-tag">🇮🇹 Amalfi</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">July 14, 2022</p>
+          <h2 class="card-title">Amal-Fi Coast</h2>
+          <p class="card-excerpt">Amalfi, Capri, Ravello, Sorrento — four days exploring the most iconic stretch of Italian coastline, from lemon groves to cliffside terraces.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 23. Tanger ────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="africa" onclick="location.href='posts/tanger.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/06/img_1760-2.jpg?fit=900%2C1200&ssl=1" alt="Tanger Morocco" loading="lazy" />
+          <span class="card-tag">🇲🇦 Tanger</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">June 6, 2022</p>
+          <h2 class="card-title">Escapade Tangerina</h2>
+          <p class="card-excerpt">Retour aux origines, contrastes harmonieux, Médina, côte atlantique… Tanger entre l'Espagne et le Maroc, avec son charme unique et sa lumière particulière.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 24. Chefchaouen ───────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="africa" onclick="location.href='posts/chefchaouen.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/06/img_2074-1.jpg?fit=1200%2C900&ssl=1" alt="Chefchaouen blue city Morocco" loading="lazy" />
+          <span class="card-tag">🇲🇦 Chefchaouen</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">June 2, 2022</p>
+          <h2 class="card-title">Escapade spirituelle à Chefchaouen</h2>
+          <p class="card-excerpt">La pépite bleue du nord du Maroc, nichée dans les montagnes du Rif. Une flânerie spirituelle dans ses ruelles bleues, entre la Médina et la nature.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 25. Dubrovnik ─────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/dubrovnik.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/05/img_0610-2.jpg?fit=1200%2C900&ssl=1" alt="Dubrovnik Croatia" loading="lazy" />
+          <span class="card-tag">🇭🇷 Dubrovnik</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">May 20, 2022</p>
+          <h2 class="card-title">Dubrovnik.. Miss des Balkans</h2>
+          <p class="card-excerpt">Un joyau de la nature et d'architecture — les remparts médiévaux, la mer Adriatique turquoise, le téléphérique et les ruelles en pierre calcaire.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 26. Bergen ────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/bergen.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/03/20220303_133123-01-2.jpeg?fit=1016%2C1200&ssl=1" alt="Bergen Norway fjords" loading="lazy" />
+          <span class="card-tag">🇳🇴 Bergen</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">March 15, 2022</p>
+          <h2 class="card-title">Bergen, Miss des Fjørds</h2>
+          <p class="card-excerpt">Les fjords de Norvège, le funiculaire Fløibanen, les maisons colorées de Bryggen et la Fiskesuppe… Bergen sous la neige, c'est magique.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 27. Castelsardo ───────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/castelsardo.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/05/20210731_131359-01_original-2.jpg?fit=1141%2C1200&ssl=1" alt="Castelsardo Sardinia" loading="lazy" />
+          <span class="card-tag">🇮🇹 Castelsardo</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">February 25, 2022</p>
+          <h2 class="card-title">Castelsardo, la bella vita!</h2>
+          <p class="card-excerpt">Una pépite italienne au nord-ouest de la Sardaigne — son château médiéval, ses ruelles pavées, ses plages sauvages et la bella vita!</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 28. Marrakech ──────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="africa" onclick="location.href='posts/marrakech.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://butterflyescape127161027.wordpress.com/wp-content/uploads/2022/02/20200103_184051-01-01-01.jpeg" alt="Marrakech Morocco" loading="lazy" />
+          <span class="card-tag">🇲🇦 Marrakech</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">February 25, 2022</p>
+          <h2 class="card-title">1001 Couleurs à Marrakech</h2>
+          <p class="card-excerpt">La Médina, Jemaa el Fna, la Palmeraie, Guéliz… Marrakech entre ses 1001 couleurs et ses saveurs épicées, au-delà des clichés touristiques.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 29. Budapest ───────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/budapest.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2021/12/dsc_1011-01-1.jpeg?fit=1200%2C801&ssl=1" alt="Budapest Hungary" loading="lazy" />
+          <span class="card-tag">🇭🇺 Budapest</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">December 28, 2021</p>
+          <h2 class="card-title">"Cool" Escape to Buda-Pest</h2>
+          <p class="card-excerpt">Art Nouveau capital of Europe — the New York Café, Gellert baths, Christmas markets, architecture that feels like a time-travel to the roaring twenties.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 30. Flirting with Paris ───────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/flirting-paris.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://butterflyescape127161027.wordpress.com/wp-content/uploads/2021/10/img-20200628-wa0003-01-01-2.jpeg" alt="Paris bridges" loading="lazy" />
+          <span class="card-tag">🇫🇷 Paris</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">October 20, 2021</p>
+          <h2 class="card-title">Flirting with Paris</h2>
+          <p class="card-excerpt">La ville de l'amour, de la beauté, de la mode et des jonquilles… An Instagram gallery flirting with the eternal city of light.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 31. Barcelona ─────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/barcelona.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2021/06/20210527_144319.jpg?fit=1200%2C540&ssl=1" alt="Barcelona Spain" loading="lazy" />
+          <span class="card-tag">🇪🇸 Barcelona</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">June 17, 2021</p>
+          <h2 class="card-title">Barcelona, la buena vida!</h2>
+          <p class="card-excerpt">Ma destination fétiche d'Europe! Gaudí, Barceloneta, Gràcia, Gothic Quarter, shopping et tapas… la buena vida à toute heure du jour et de la nuit.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 32. Annecy ────────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/annecy.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://butterflyescape127161027.wordpress.com/wp-content/uploads/2021/02/20210219_131908-1.jpg" alt="Annecy winter" loading="lazy" />
+          <span class="card-tag">🇫🇷 Annecy</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">February 19, 2021</p>
+          <h2 class="card-title">Escapade hivernale à Annecy</h2>
+          <p class="card-excerpt">Le Vieux-Annecy et ses canaux, le lac au pied des Alpes… une escapade hivernale dans la Venise des Alpes, à deux heures de Paris.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 33. Djerbahood ────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="africa" onclick="location.href='posts/djerbahood.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2021/01/dsc_2387-01-1.jpeg?fit=1200%2C675&ssl=1" alt="Djerba street art Tunisia" loading="lazy" />
+          <span class="card-tag">🇹🇳 Djerba</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">January 10, 2021</p>
+          <h2 class="card-title">Let's Get Lost in DJERBAHOOD!</h2>
+          <p class="card-excerpt">Djerba, "the island of dreams" — a paradise of street art, turquoise waters and golden sand. Getting lost in DJERBAHOOD is a full sensory experience.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 34. Noël / Escapades féériques ────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/noel.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://butterflyescape127161027.wordpress.com/wp-content/uploads/2020/12/fb_img_1576925249051-01-01.jpeg" alt="Christmas markets Europe" loading="lazy" />
+          <span class="card-tag">🎄 Christmas</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">December 3, 2020</p>
+          <h2 class="card-title">Escapades féériques</h2>
+          <p class="card-excerpt">Paris, Strasbourg, Colmar, Lisbonne… Les marchés de Noël les plus magiques d'Europe et ma bucket-list des villes à visiter en décembre.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 35. Farandole d'automne ───────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe" onclick="location.href='posts/automne.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2020/11/dsc_0229_snapseed-1.jpg?fit=1200%2C800&ssl=1" alt="Autumn Europe" loading="lazy" />
+          <span class="card-tag">🍂 Autumn</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">October 16, 2020</p>
+          <h2 class="card-title">Farandole de couleurs d'automne…</h2>
+          <p class="card-excerpt">Bruges, Cracovie et les monuments parisiens parés de couleurs chaudes. L'automne en Europe est une saison riche en émotions et en couleurs flamboyantes.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 36. Porto-Vecchio ─────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/porto-vecchio.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2022/09/dsc_0645_original-1.jpg?fit=1200%2C802&ssl=1" alt="Porto-Vecchio Corsica" loading="lazy" />
+          <span class="card-tag">🇫🇷 Corse</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">August 4, 2020</p>
+          <h2 class="card-title">Porto-Vecchio</h2>
+          <p class="card-excerpt">Les Aiguilles de Bavella, Bonifacio et ses falaises blanches, les plages de sable blanc de Porto-Vecchio… La Corse du Sud dans toute sa splendeur.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 37. Ajaccio ───────────────────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/ajaccio.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2021/07/dsc_6235-01-01.jpeg?fit=1200%2C704&ssl=1" alt="Ajaccio Corsica" loading="lazy" />
+          <span class="card-tag">🇫🇷 Corse</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">July 30, 2020</p>
+          <h2 class="card-title">Escapade dorée à Ajaccio, Corse</h2>
+          <p class="card-excerpt">Certains locaux l'appellent la "prison dorée"… Le port de plaisance, les plages, la citadelle et la fiesta de l'été à Ajaccio.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- ─── 38. Calvi & Île Rousse ───────────────────── -->
+      <!-- IMAGE: Replace src below with local file when available -->
+      <article class="card" data-category="europe france" onclick="location.href='posts/calvi.html'">
+        <div class="card-image-wrap">
+          <img class="card-image" src="https://i0.wp.com/butterflyescape127161027.wordpress.com/wp-content/uploads/2021/06/dsc_6000-01-01-1.jpeg?fit=1200%2C695&ssl=1" alt="Calvi Corsica" loading="lazy" />
+          <span class="card-tag">🇫🇷 Corse</span>
+        </div>
+        <div class="card-body">
+          <p class="card-date">July 24, 2020</p>
+          <h2 class="card-title">Calvi et L'île Rousse, Corse</h2>
+          <p class="card-excerpt">La Balagne — Calvi et ses remparts face à la mer, L'île Rousse et son marché couvert… La Corse, "l'île de beauté", dans toute sa splendeur estivale.</p>
+          <div class="card-footer">
+            <span class="card-read-more">Read more →</span>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /posts-grid -->
+  </section>
+
+  <!-- ═══ ABOUT STRIP ══════════════════════════════════════ -->
+  <section id="about" class="about-strip">
+    <p class="eyebrow">About the blog</p>
+    <h2>"Get up and travel, the world is waiting."</h2>
+    <p>Butterfly Escape is a travel diary born from a deep love for discovering new places, cultures and flavours. From the cobblestones of Paris to the fjords of Bergen, from the souks of Marrakech to the hills of San Francisco — every trip is a chance to grow, to feel alive, and to collect beautiful memories. 🦋</p>
+    <a class="btn-insta" href="https://www.instagram.com/butterfly__escape" target="_blank" rel="noopener">
+      📸 Follow on Instagram
+    </a>
+  </section>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <p>© 2025 Butterfly Escape · Made with 🦋 · <a href="https://www.instagram.com/butterfly__escape" target="_blank">Instagram</a></p>
+  </footer>
+
+  <!-- ═══ JS: Filter ═══════════════════════════════════════ -->
+  <script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards   = document.querySelectorAll('.card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        cards.forEach(card => {
+          const cats = card.dataset.category || '';
+          card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
