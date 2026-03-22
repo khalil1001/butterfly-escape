@@ -45,6 +45,14 @@
       <h2 class="section-title">All Destinations</h2>
     </div>
 
+    <!-- Search Bar -->
+    <div class="search-container">
+      <div class="search-box">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <input type="text" id="searchInput" placeholder="Search destinations or keywords..." autocomplete="off">
+      </div>
+    </div>
+
     <!-- Filter bar -->
     <div class="filter-bar" id="filterBar">
       <button class="filter-btn active" data-filter="all">All</button>
@@ -721,22 +729,45 @@
     <p>© 2025 Butterfly Escape · Made with 🦋 · <a href="https://www.instagram.com/butterfly__escape" target="_blank">Instagram</a></p>
   </footer>
 
-  <!-- ═══ JS: Filter ═══════════════════════════════════════ -->
+  <!-- ═══ JS: Filter & Search ════════════════════════════════ -->
   <script>
     const buttons = document.querySelectorAll('.filter-btn');
     const cards   = document.querySelectorAll('.card');
+    const searchInput = document.getElementById('searchInput');
+
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    function applyFilters() {
+      cards.forEach(card => {
+        const cats = card.dataset.category || '';
+        const passesCategory = (currentFilter === 'all' || cats.includes(currentFilter));
+        
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        const excerpt = card.querySelector('.card-excerpt').textContent.toLowerCase();
+        const tag = card.querySelector('.card-tag').textContent.toLowerCase();
+        
+        const passesSearch = (currentSearch === '' || title.includes(currentSearch) || excerpt.includes(currentSearch) || tag.includes(currentSearch));
+        
+        card.style.display = (passesCategory && passesSearch) ? '' : 'none';
+      });
+    }
 
     buttons.forEach(btn => {
       btn.addEventListener('click', () => {
         buttons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        cards.forEach(card => {
-          const cats = card.dataset.category || '';
-          card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
-        });
+        currentFilter = btn.dataset.filter;
+        applyFilters();
       });
     });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value.toLowerCase().trim();
+        applyFilters();
+      });
+    }
   </script>
 
 
