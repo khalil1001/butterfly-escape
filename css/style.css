@@ -415,36 +415,66 @@ a { text-decoration: none; color: inherit; }
 
 /* ── About Strip ─────────────────────────────────────────── */
 .about-strip {
-  background: linear-gradient(135deg, #3D2B35 0%, #5A3D49 100%);
-  color: var(--cream);
-  padding: 5rem 2rem;
+  background: var(--white);
+  color: var(--charcoal);
+  padding: 6rem 2rem;
   text-align: center;
 }
 
 .about-strip .eyebrow {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
   color: var(--rose);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
 }
 
-.about-strip h2 {
-  font-family: var(--font-serif);
-  font-size: clamp(1.8rem, 3vw, 2.4rem);
-  font-weight: 600;
-  font-style: italic;
-  margin-bottom: 1.2rem;
-  color: var(--cream);
+.about-profile-img {
+  width: 140px; 
+  height: 140px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin: 1.5rem auto 1rem; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+  display: block;
 }
 
-.about-strip p {
+.about-quote {
+  font-size: 1.4rem; 
+  font-family: var(--font-serif); 
+  color: var(--charcoal); 
+  margin: 0 auto 1rem; 
+  line-height: 1.4; 
   max-width: 600px;
-  margin: 0 auto 2rem;
-  color: rgba(250,247,242,0.8);
-  font-size: 1rem;
-  line-height: 1.75;
+}
+
+.about-quote-author {
+  font-style: italic; 
+  font-size: 0.95rem; 
+  color: var(--muted); 
+  margin-bottom: 3rem; 
+  text-align: center;
+}
+
+.about-content {
+  font-size: 1.05rem; 
+  line-height: 1.8; 
+  color: var(--charcoal); 
+  max-width: 650px; 
+  margin: 0 auto; 
+  text-align: left;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+}
+
+.about-intro-bold {
+  text-align: center; 
+  font-weight: 500; 
+  font-size: 1.15rem; 
 }
 
 .btn-insta {
