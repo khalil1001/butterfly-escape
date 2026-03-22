@@ -875,20 +875,37 @@ a { text-decoration: none; color: inherit; }
 }
 
 .product-image-wrap {
+  position: relative;
   width: 100%;
   aspect-ratio: 3 / 4;
   overflow: hidden;
   background: var(--cream);
 }
 
-.product-image-wrap img {
+.product-image-wrap img.img-main {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.product-card:hover .product-image-wrap img {
+.product-image-wrap img.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.product-card:hover .product-image-wrap img.img-main {
+  transform: scale(1.05); /* Only scale main image if we want */
+}
+
+.product-card:hover .product-image-wrap img.img-hover {
+  opacity: 1;
   transform: scale(1.05);
 }
 
