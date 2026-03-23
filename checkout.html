@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — Butterfly Escape</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <style>
+    body { background: var(--cream); display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .checkout-container { background: var(--white); width: 100%; max-width: 450px; padding: 3rem; border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); text-align: center; font-family: var(--font-sans); }
+    .checkout-container h1 { font-family: var(--font-serif); color: var(--charcoal); margin-bottom: 0.5rem; }
+    .checkout-container p { color: var(--taupe); margin-bottom: 2rem; }
+    .stripe-mockup { border: 1px solid #E0E6EB; border-radius: 8px; padding: 1.5rem; text-align: left; margin-bottom: 2rem; }
+    .stripe-input { width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid #E0E6EB; border-radius: 6px; box-sizing: border-box; font-family: monospace; }
+    .btn-pay { width: 100%; background: #635BFF; color: white; border: none; padding: 1rem; border-radius: 8px; font-weight: 600; font-size: 1rem; cursor: pointer; transition: background 0.3s ease; }
+    .btn-pay:hover { background: #4B45D6; }
+    .back-link { display: block; margin-top: 1.5rem; color: var(--rose); text-decoration: none; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="checkout-container" id="checkout-box">
+    <h1 id="product-name">Poster Print</h1>
+    <p>Complete your purchase securely via Stripe.</p>
+    
+    <div class="stripe-mockup">
+      <label style="display:block; font-size:0.85rem; color:#6b7c93; margin-bottom:0.5rem; font-weight:600;">Card information</label>
+      <input type="text" class="stripe-input" value="•••• •••• •••• 4242" readonly>
+      <div style="display:flex; gap:1rem;">
+        <input type="text" class="stripe-input" value="12 / 26" readonly>
+        <input type="text" class="stripe-input" value="123" readonly>
+      </div>
+      <label style="display:block; font-size:0.85rem; color:#6b7c93; margin-bottom:0.5rem; font-weight:600; margin-top:0.5rem;">Name on card</label>
+      <input type="text" class="stripe-input" placeholder="Amal" value="Amal">
+    </div>
+
+    <button class="btn-pay" onclick="processPayment()">Pay €45.00</button>
+    <a href="store.html" class="back-link">← Back to Store</a>
+  </div>
+
+  <script>
+    // Grab product name from URL if available
+    const urlParams = new URLSearchParams(window.location.search);
+    const product = urlParams.get('product');
+    if(product) {
+      document.getElementById('product-name').textContent = product;
+    }
+
+    function processPayment() {
+      const box = document.getElementById('checkout-box');
+      box.innerHTML = `
+        <div style="font-size: 4rem; margin-bottom: 1rem;">✅</div>
+        <h1 style="font-family: var(--font-serif); color: var(--charcoal); margin-bottom: 1rem;">Payment Successful!</h1>
+        <p style="color: var(--taupe); line-height: 1.6;">Thank you for your order. Your beautiful print will be shipped to you soon!</p>
+        <a href="store.html" class="back-link" style="margin-top: 2rem; display: inline-block; padding: 0.8rem 2rem; background: var(--rose); color: white; border-radius: 50px;">Return to Shop</a>
+      `;
+    }
+  </script>
+</body>
+</html>
