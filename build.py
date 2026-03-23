@@ -544,6 +544,9 @@ def main():
             "tags": get_prop(row, "Tags") or cat
         }
         articles.append(article)
+        
+        # Ensure posts directory exists
+        POSTS_DIR.mkdir(parents=True, exist_ok=True)
 
         # Fetch body blocks and build post page
         blocks  = get_all_blocks(page_id)
@@ -598,8 +601,8 @@ def main():
 
         # Build product detail page (only for Active products)
         if status == "Active":
-            prod_html = build_product_page(product)
             PRODUCTS_DIR.mkdir(parents=True, exist_ok=True)
+            prod_html = build_product_page(product)
             prod_path = PRODUCTS_DIR / f"{slug}.html"
             with open(prod_path, "w", encoding="utf-8") as f:
                 f.write(prod_html)
