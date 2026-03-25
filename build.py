@@ -332,22 +332,15 @@ def build_post_page(article, body_html):
         <div data-lyket-type="clap" data-lyket-id="{slug}" data-lyket-namespace="butterfly-escape" data-lyket-template="twitter"></div>
       </div>
       <div class="giscus-container">
-        <script src="https://giscus.app/client.js"
-                data-repo="khalil1001/butterfly-escape"
-                data-repo-id="R_kgDORtudeg"
-                data-category="Announcements"
-                data-category-id="DIC_kwDORtudes4C5PFd"
-                data-mapping="pathname"
-                data-strict="0"
-                data-reactions-enabled="1"
-                data-emit-metadata="0"
-                data-input-position="bottom"
-                data-theme="preferred_color_scheme"
-                data-lang="en"
-                data-loading="lazy"
-                crossorigin="anonymous"
-                async>
-        </script>
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="b73623e9-3610-4a6b-afbc-361cdae9aa46"
+          data-page-id="{slug}"
+          data-page-url="https://butterfly-escape.com/posts/{slug}.html"
+          data-page-title="{title}"
+          data-theme="light"
+        ></div>
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
       </div>
     </div>
     <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_bc735990924907106c59d1a8e9e7b2" async></script>
