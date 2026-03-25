@@ -744,9 +744,10 @@ a { text-decoration: none; color: inherit; }
   .nav { padding: 0 1rem; }
 
 
-  .posts-grid { 
-    grid-template-columns: 1fr; 
-    padding: 0 1rem 3rem; 
+  .posts-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+    padding: 0 1rem 3rem;
   }
 
   .hero { padding: 4rem 1.5rem; }
