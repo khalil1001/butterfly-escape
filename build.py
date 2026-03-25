@@ -558,6 +558,12 @@ def main():
             f.write(post_html)
         print(f"     ✓ Written posts/{slug}.html")
 
+    # Sort articles by date (newest first)
+    # Date is YYYY-MM-DD, so reverse alphabetical sort works perfectly
+    articles.sort(key=lambda x: x["date"], reverse=True)
+
+    # Generate cards from sorted list
+    for article in articles:
         post_cards.append(build_post_card(article))
 
     # Update index.html
