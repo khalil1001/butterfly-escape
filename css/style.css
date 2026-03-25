@@ -1109,33 +1109,65 @@ a { text-decoration: none; color: inherit; }
 
 /* ── Social & Comments Section ──────────────────────────── */
 .post-social {
-  margin-top: 4rem;
+  margin-top: 5rem;
   padding: 0;
 }
 
 .social-divider {
   border: 0;
-  border-top: 1px solid var(--border);
-  margin-bottom: 3rem;
+  border-top: 1px solid var(--taupe);
+  margin-bottom: 4rem;
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.social-title {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  color: var(--charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.social-subtitle {
+  font-family: var(--font-sans);
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .lyket-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
-  padding: 1rem;
-  background: var(--taupe-light);
+  margin-bottom: 4rem;
+  padding: 1.5rem;
+  background: var(--white);
+  border: 1px solid var(--taupe);
   border-radius: var(--radius);
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: var(--transition);
 }
 
-.giscus-container {
+.lyket-container:hover {
+  box-shadow: var(--shadow);
+  transform: translateY(-2px);
+}
+
+.cusdis-container {
   margin-top: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
+  min-height: 400px; /* Prevents the 'tiny' feel */
 }
 
 @media (max-width: 768px) {
   .post-social {
-    margin-top: 3rem;
+    margin-top: 4rem;
+  }
+  .social-title {
+    font-size: 1.75rem;
   }
 }

@@ -327,11 +327,21 @@ def build_post_page(article, body_html):
     
     <!-- Social Section -->
     <div class="post-social">
-      <hr style="border: 0; border-top: 1px solid var(--border); margin: 3rem 0;">
-      <div class="lyket-container" style="display: flex; justify-content: center; margin-bottom: 2.5rem;">
-        <div data-lyket-type="clap" data-lyket-id="{slug}" data-lyket-namespace="butterfly-escape" data-lyket-template="twitter"></div>
+      <hr class="social-divider">
+      
+      <div class="social-header">
+        <h2 class="social-title">Join the Conversation</h2>
+        <p class="social-subtitle">Liked this article? Let me know with a clap or a comment below! 🦋</p>
       </div>
-      <div class="giscus-container">
+
+      <div class="lyket-container">
+        <div data-lyket-type="clap" 
+             data-lyket-id="{slug}" 
+             data-lyket-namespace="butterfly-escape" 
+             data-lyket-template="twitter"></div>
+      </div>
+
+      <div class="cusdis-container">
         <div id="cusdis_thread"
           data-host="https://cusdis.com"
           data-app-id="b73623e9-3610-4a6b-afbc-361cdae9aa46"
