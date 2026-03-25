@@ -310,7 +310,7 @@ def build_post_page(article, body_html):
         textColor: '#4A4A4A',
         subtextColor: '#7D7D7D',
         backgroundColor: 'transparent',
-        buttonColor: '#E5A9A9'
+        buttonColor: '#C9788A'
       }});
     }});
   </script>
@@ -388,7 +388,7 @@ def build_product_page(product):
         textColor: '#4A4A4A',
         subtextColor: '#7D7D7D',
         backgroundColor: 'transparent',
-        buttonColor: '#E5A9A9'
+        buttonColor: '#C9788A'
       }});
     }});
   </script>
