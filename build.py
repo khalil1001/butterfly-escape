@@ -303,7 +303,19 @@ def build_post_page(article, body_html):
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="../favicon.png" type="image/png" />
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {{
+      commentBox('5724160068157440-proj', {{
+        textColor: '#4A4A4A',
+        subtextColor: '#7D7D7D',
+        backgroundColor: 'transparent',
+        buttonColor: '#E5A9A9'
+      }});
+    }});
+  </script>
 </head>
+
 <body>
 {NAV.format(root="../")}
   <div class="post-hero">
@@ -334,26 +346,8 @@ def build_post_page(article, body_html):
         <p class="social-subtitle">Liked this article? Let me know with a clap or a comment below! 🦋</p>
       </div>
 
-      <div class="lyket-container">
-        <div data-lyket-type="clap" 
-             data-lyket-id="{slug}" 
-             data-lyket-namespace="butterfly-escape" 
-             data-lyket-template="twitter"></div>
-      </div>
-
-      <div class="cusdis-container">
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="b73623e9-3610-4a6b-afbc-361cdae9aa46"
-          data-page-id="{slug}"
-          data-page-url="https://butterfly-escape.com/posts/{slug}.html"
-          data-page-title="{title}"
-          data-theme="light"
-        ></div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-      </div>
+      <div class="commentbox"></div>
     </div>
-    <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_bc735990924907106c59d1a8e9e7b2" async></script>
   </div>
 {FOOTER_POST}
 {NAV_SCRIPT}
@@ -387,7 +381,19 @@ def build_product_page(product):
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="../favicon.png" type="image/png" />
+  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {{
+      commentBox('5724160068157440-proj', {{
+        textColor: '#4A4A4A',
+        subtextColor: '#7D7D7D',
+        backgroundColor: 'transparent',
+        buttonColor: '#E5A9A9'
+      }});
+    }});
+  </script>
 </head>
+
 <body class="product-page">
 {NAV.format(root="../")}
   <main class="product-detail-container">
@@ -411,7 +417,18 @@ def build_product_page(product):
         <a href="{link}" class="btn-buy btn-buy-large" target="_blank" rel="noopener">Buy Now — Checkout securely with Stripe</a>
       </div>
     </div>
+  <div class="post-container" style="margin-top: 2rem;">
+    <div class="post-social">
+      <hr class="social-divider">
+      <div class="social-header">
+        <h2 class="social-title">Join the Conversation</h2>
+        <p class="social-subtitle">Liked this product? Let me know with a comment below! 🦋</p>
+      </div>
+      <div class="commentbox"></div>
+    </div>
+  </div>
   </main>
+
 {FOOTER_ROOT}
   <script>
     function changeImage(src, el) {{
