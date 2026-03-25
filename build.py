@@ -303,7 +303,9 @@ def build_post_page(article, body_html):
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="../favicon.png" type="image/png" />
+  <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_bc735990924907106c59d1a8e9e7b2"></script>
 </head>
+
 <body>
 {NAV.format(root="../")}
   <div class="post-hero">
@@ -353,7 +355,6 @@ def build_post_page(article, body_html):
         <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
       </div>
     </div>
-    <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_bc735990924907106c59d1a8e9e7b2" async></script>
   </div>
 {FOOTER_POST}
 {NAV_SCRIPT}
@@ -387,7 +388,9 @@ def build_product_page(product):
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="../favicon.png" type="image/png" />
+  <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_bc735990924907106c59d1a8e9e7b2"></script>
 </head>
+
 <body class="product-page">
 {NAV.format(root="../")}
   <main class="product-detail-container">
