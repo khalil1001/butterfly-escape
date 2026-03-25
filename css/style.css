@@ -1105,3 +1105,37 @@ a { text-decoration: none; color: inherit; }
     gap: 3rem;
   }
 }
+
+
+/* ── Social & Comments Section ──────────────────────────── */
+.post-social {
+  margin-top: 4rem;
+  padding: 0;
+}
+
+.social-divider {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.lyket-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  background: var(--taupe-light);
+  border-radius: var(--radius);
+}
+
+.giscus-container {
+  margin-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .post-social {
+    margin-top: 3rem;
+  }
+}
