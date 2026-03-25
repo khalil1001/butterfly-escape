@@ -341,10 +341,8 @@ def build_post_page(article, body_html):
     <div class="post-social">
       <hr class="social-divider">
       
-      <div class="social-header">
         <h2 class="social-title">Join the Conversation</h2>
-        <p class="social-subtitle">Liked this article? Let me know with a clap or a comment below! 🦋</p>
-      </div>
+        <p class="social-subtitle">Enjoyed the read? I'd love to hear your thoughts in the comments below! 🦋</p>
 
       <div class="commentbox"></div>
     </div>
@@ -420,10 +418,8 @@ def build_product_page(product):
   <div class="post-container" style="margin-top: 2rem;">
     <div class="post-social">
       <hr class="social-divider">
-      <div class="social-header">
         <h2 class="social-title">Join the Conversation</h2>
-        <p class="social-subtitle">Liked this product? Let me know with a comment below! 🦋</p>
-      </div>
+        <p class="social-subtitle">Have a question or feedback about this piece? Leave a comment below! 🦋</p>
       <div class="commentbox"></div>
     </div>
   </div>
