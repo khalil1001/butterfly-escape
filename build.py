@@ -303,6 +303,14 @@ def build_post_page(article, body_html):
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="../favicon.png" type="image/png" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDTSNKJ1X0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'G-JDTSNKJ1X0');
+  </script>
   <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {{
@@ -379,6 +387,14 @@ def build_product_page(product):
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="../favicon.png" type="image/png" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JDTSNKJ1X0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag('js', new Date());
+    gtag('config', 'G-JDTSNKJ1X0');
+  </script>
   <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {{
