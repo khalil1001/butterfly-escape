@@ -1137,30 +1137,10 @@ a { text-decoration: none; color: inherit; }
   font-size: 0.95rem;
 }
 
-.lyket-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4rem;
-  padding: 1.5rem;
-  background: var(--white);
-  border: 1px solid var(--taupe);
-  border-radius: var(--radius);
-  max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: var(--transition);
-}
-
-.lyket-container:hover {
-  box-shadow: var(--shadow);
-  transform: translateY(-2px);
-}
-
-.cusdis-container {
+.commentbox {
   margin-top: 2rem;
   padding-bottom: 5rem;
-  min-height: 400px; /* Prevents the 'tiny' feel */
+  min-height: 400px; /* Prevents layout shift and 'tiny' feel */
 }
 
 @media (max-width: 768px) {
