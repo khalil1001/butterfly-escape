@@ -337,10 +337,9 @@ def build_post_page(article, body_html):
       </div>
 
       <div class="lyket-container">
-        <div data-lyket-type="clap" 
+        <div data-lyket-type="like" 
              data-lyket-id="{slug}" 
-             data-lyket-namespace="butterfly-escape" 
-             data-lyket-template="twitter"></div>
+             data-lyket-namespace="butterfly-escape"></div>
       </div>
 
       <div class="cusdis-container">
