@@ -324,6 +324,33 @@ def build_post_page(article, body_html):
     <div class="post-tags">
       {tags_html}
     </div>
+    
+    <!-- Social Section -->
+    <div class="post-social">
+      <hr style="border: 0; border-top: 1px solid var(--border); margin: 3rem 0;">
+      <div class="lyket-container" style="display: flex; justify-content: center; margin-bottom: 2.5rem;">
+        <div data-lyket-type="clap" data-lyket-id="{slug}" data-lyket-namespace="butterfly-escape" data-lyket-template="twitter"></div>
+      </div>
+      <div class="giscus-container">
+        <script src="https://giscus.app/client.js"
+                data-repo="khalil1001/butterfly-escape"
+                data-repo-id="R_kgDORtudeg"
+                data-category="Announcements"
+                data-category-id="DIC_kwDORtudes4C5PFd"
+                data-mapping="pathname"
+                data-strict="0"
+                data-reactions-enabled="1"
+                data-emit-metadata="0"
+                data-input-position="bottom"
+                data-theme="preferred_color_scheme"
+                data-lang="en"
+                data-loading="lazy"
+                crossorigin="anonymous"
+                async>
+        </script>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@lyket/widget@latest/dist/lyket.js?apiKey=pt_bc735990924907106c59d1a8e9e7b2" async></script>
   </div>
 {FOOTER_POST}
 {NAV_SCRIPT}
